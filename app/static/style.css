@@ -1,0 +1,36 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  color: black;
+}
+
+.form-group {
+  width: 55%;
+  padding-bottom: 2px;
+}
+
+#submitBtn {
+  margin-top: 12px;
+}
+
+#charNum {
+  float: right;
+}
+
+#outputBox {
+  width: 55%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+#headingText {
+  margin-top: 12px;
+  padding: 10px 0px;
+}
+
+#outputText {
+  text-align: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
