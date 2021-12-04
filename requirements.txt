@@ -1,0 +1,4 @@
+flair==0.10
+Flask==2.0.1
+gibberish_detector==0.1.1
+torch==1.8.1
