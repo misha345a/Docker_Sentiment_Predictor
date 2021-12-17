@@ -5,6 +5,11 @@
 This project deploys a simple sentiment prediction interface using Flask and Docker. <br>
 Once a user enters a valid text input, sentiment is automatically predicted and displayed as POSITIVE or NEGATIVE along with the model's confidence score for that prediction.
 
+<b>Update:</b><br>
+The Docker image is now deployed to Heroku as well. <br>
+You can check out the full web app using this link: <br>
+http://flask-sentiment-predictor.herokuapp.com/
+
 ## Model
 The text classification model is a pre-trained variation of BERT, which is downloaded and run using Flair - a powerful NLP library. 
 This model has been trained on corpora from large sentiment datasets, including Amazon product reviews and movie reviews.
