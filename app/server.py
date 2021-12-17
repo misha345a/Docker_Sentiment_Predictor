@@ -1,6 +1,7 @@
 # library imports
 from flask import Flask, render_template, request, jsonify
 from sentiment_prediction import *
+import os
 
 # define the Flask constructor
 app = Flask(__name__, template_folder='templates')
@@ -28,6 +29,9 @@ def process():
 if __name__ == '__main__':
     # launch a builtin server for testing
     # app.run(host='localhost', port=5000, debug=True)
+    
+    # Heroku will set the PORT environment variable for web traffic
+    port = os.environ.get("PORT", 8000) 
 
     # launch an externally visible server
-    app.run(host='0.0.0.0', port=8000, debug=False)
+    app.run(host="0.0.0.0", port=port, debug=False)
